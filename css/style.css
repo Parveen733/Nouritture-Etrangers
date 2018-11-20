@@ -1,0 +1,955 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background: #ffffff; /* #c1bdba */
+  font-family: 'Titillium Web', sans-serif;
+background-image: url("../img/Login_Page_Image.jpg");
+    background-size: cover;
+}
+
+.title{
+    position:relative;
+	float: left;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 40px;
+	font-weight: 200;
+    top:-15px;
+    left:80px;
+   text-align: center;
+
+}
+
+.title span{
+    position:relative;
+	color: #F29E20 !important;
+    font-family: 'Exo', sans-serif;
+	font-size: 40px;
+	font-weight: 200;
+    text-align: center;
+   
+
+}
+
+
+a {
+  text-decoration: none;
+  color: #1ab188;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+a:hover {
+  color: #179b77;
+}
+
+.form {
+  background: rgba(3,3,3, 0.9); 
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+.tab-group li a:hover {
+  background: #F29E05;
+  color: #ffffff;
+}
+.tab-group .active a {
+  background: #F29E20;
+  color: #ffffff;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+.AddHeading h1{
+    font-size:24px;
+    position: relative;
+    right:198px;
+}
+
+h2 {
+    text-align: center;
+    color: #F29E20;
+    font-weight: 1000;
+    margin: 0;
+}
+
+span {
+    color: #1ab188;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    color: #ffffff;
+    margin: 0px 0px 50px 0px;
+}
+
+div.info {
+    color: pink;
+    display: box;
+    text-align: center;
+    padding: 5px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    border: 1px solid red;
+    background: #66131c;
+}
+
+label {
+  position: absolute;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+}
+ 
+}
+
+
+.req {
+  margin: 2px;
+  color: #F29E06;
+}
+
+
+
+
+label.active .req {
+  opacity: 0;
+}
+
+
+
+label.highlight {
+  color: #ffffff;
+}
+
+
+
+.cat {
+    
+ 
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+ 
+  pointer-events: none;
+  font-size: 22px;
+}
+
+label.active {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+
+   
+
+
+
+
+input, textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+input:focus, textarea:focus {
+  outline: 0;
+  border-color: #F29E05;
+}
+
+textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+}
+
+.EditHeading p{
+    font-size: 35px;
+    text-align: justify;
+    position: relative;
+    
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.field-wrap select {
+    
+}
+.field-wrap a{
+    text-align: center;
+}
+
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.top-row > div:last-child {
+  margin: 0;
+}
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #F29E05;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover, .button:focus {
+  background: #FFF;
+  color: #F29E05;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}
+
+.forgot a{
+    color:#FFF;
+}
+
+/*Version1*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    background-image: url('../img/Login_Page_Image.JPG');
+    background-position: top;
+   
+}
+
+.headerlink{
+     text-decoration:none;
+     color:#333;
+}
+
+.header span{
+	
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 40px;
+	font-weight: 200;
+    z-index: 1  ;
+     background-color: #333;
+    
+    
+}
+
+.header span span{
+	color: #F29E20 !important;
+    z-index: 1;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px ;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+input[type=searchbar] {
+    width: 100px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    text-align:justify;
+    position:relative;
+    background: transparent;
+    width: 30%;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=searchbar]:focus {
+    background-color: #f2f2f2;
+}
+
+.UserName{
+    color: #fff;    
+    vertical-align: middle;
+    position: absolute;
+    right:185px;
+    top:123px;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    float:left;
+    color:white;
+    
+}
+
+
+
+.UserName:hover{
+    color: #F29E20 !important;
+}
+.Logout{
+    color: #fff;
+    text-align: right;    
+     position:relative;
+    float:right;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+/*Menu  Style*/
+
+.Menu {
+    
+    cursor:pointer;
+   padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    float:left;
+    color:white;
+}
+
+.Menu:hover{
+     background-color: #ddd;
+    color: black;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -10px;
+    right: 2px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+.content{
+    cursor:pointer;
+    width: 35.33%;
+   display: inline-table;
+    padding: 5px;
+    margin:5px;
+    position:relative;
+    text-align: justify;
+    vertical-align: middle;
+     background-color: #333;
+    left:250px;
+    z-index: 2;
+}
+
+.content:hover{
+   
+    background-color: #999;
+    opacity: .9;
+    
+    
+}
+
+
+
+.content H2{
+   color: #F29E20 ;
+}
+
+.content p{
+   color: #fff;
+}
+
+
+.content img{
+    position:relative;
+    width:450px;
+    height:250px;
+    margin: 5px
+    
+}
+
+/*EditContent Page*/
+.editcontent{
+   
+    width: 55.33%;
+   display: inline-table;
+    padding: 5px;
+    margin:5px;
+    position:relative;
+    text-align: justify;
+    vertical-align: middle;
+     background-color: #333;
+    left:250px;
+    z-index: 2;
+    opacity: .9;
+}
+
+
+
+
+
+.editcontent H2{
+   color: #F29E20 ;
+}
+
+.editcontent p{
+   color: #fff;
+}
+
+
+.editcontent img{
+    position:relative;
+    width:99%;
+    height: 350px;
+    margin: 5px
+    
+}
+
+.editcontent table{
+    width: 90%;
+    text-align: left;
+    position: relative;
+    left:5%;
+}
+
+.editcontent td{
+    width: 200px;
+}
+.editcontent .recipecontent td{
+    border: 1px solid black;
+}
+
+.editcontent h1:hover{
+    color: #FFF;
+    
+    
+}
+
+.editcontent h1{
+    color: #F29E20;
+    text-align: center;
+    position: relative;
+   
+    font-size: 50px;
+    
+}
+
+
+
+.editcontent h3{
+    color: #F29E20;
+}
+
+.editcontent h4{
+    color: #fff;
+}
+
+/*editcontent End*/
+
+
+/*View Content Page*/
+.viewcontent{
+   
+    width: 600px;
+    height: 100px;
+   display: inline-table;
+    position:relative;
+    padding: 2px;
+    text-align: justify;
+    vertical-align: middle;
+     background-color: #333;
+    opacity: .9;
+    left: 6%;
+}
+
+
+
+
+.viewcontent:hover{
+    opacity: 1;
+}
+
+
+.viewcontent p{
+   color: #fff;
+}
+
+
+.viewcontent img{
+    position:relative;
+    width:99%;
+    height: 350px;
+    margin: 5px
+    
+}
+
+.viewcontent table{
+    width: 100%;
+    text-align: left;
+    position: relative;
+   
+    
+}
+
+.viewcontent td{
+    width: 200px;
+}
+.viewcontent .recipecontent td{
+    border: 1px solid black;
+}
+
+.viewcontent h1:hover{
+    color: #FFF;
+    
+    
+}
+
+.viewcontent h1{
+    color: #F29E20;
+    text-align: center;
+    position: relative;
+    
+    font-size: 50px;
+    
+}
+
+
+
+.viewcontent h3{
+    color: #F29E20;
+}
+
+.viewcontent h4{
+    color: #fff;
+}
+
+
+/*Edit Content*/
+
+/*Edit Category*/
+
+.viewcontentcategory{
+   
+    width: 600px;
+    height: 100px;
+   display: inline-table;
+    position:relative;
+    padding: 2px;
+    text-align: justify;
+    vertical-align: middle;
+     background-color: #333;
+    opacity: .9;
+    left: 27%;
+}
+
+
+
+
+.viewcontentcategory:hover{
+    opacity: 1;
+}
+
+
+.viewcontentcategory p{
+   color: #fff;
+}
+
+
+.viewcontentcategory img{
+    position:relative;
+    width:99%;
+    height: 350px;
+    margin: 5px
+    
+}
+
+.viewcontent table{
+    width: 100%;
+    text-align: left;
+    position: relative;
+   
+    
+}
+
+.viewcontentcategory td{
+    width: 200px;
+}
+.viewcontent .recipecontent td{
+    border: 1px solid black;
+}
+
+.viewcontentcategory h1:hover{
+    color: #FFF;
+    
+    
+}
+
+.viewcontentcategory h1{
+    color: #F29E20;
+    text-align: center;
+    position: relative;
+    
+    font-size: 50px;
+    
+}
+
+
+
+.viewcontentcategory h3{
+    color: #F29E20;
+}
+
+.viewcontentcategory h4{
+    color: #fff;
+}
+
+/*Edit Category*/
+
+
+.row{
+    background-image: url(../IMAGES/Login_Page_Image.jpg);
+    background-size: cover;
+}
+
+    
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+     
+}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.bottomNav{
+    overflow:hidden;
+    background-color: #333;
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+    opacity: 0.95;
+    color: white;
+    text-align: center;
+    
+    top:15px;
+    
+}
+
+
+.BaseFooter {
+   
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    color: white;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 20px;
+    background-color: #555;
+    
+    
+    
+    
+   }
+.FooterContent{
+    display:inline;
+    
+}
+
+.links1 a{
+    text-decoration:none;
+    color:#fff;
+    
+    
+    
+}
+
+.links1 ul{
+    
+list-style-type: none;
+    text-align: left;
+    background-color: #333;
+    background-clip: border-box;
+    opacity: .9;
+    margin:5px;
+    
+    
+    
+}
+
+
+.fa {
+  padding: 5px;
+  font-size: 5px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+
+.BaseFooter span{
+    color:#fff;
+}
+
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+    height: 400px;
+  position: relative;
+  margin: auto;
+    
+    
+}
+
+.slideshow-container img{
+    width: 100%;
+    height: 400px;
+     position: relative;
+    
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+    left:-13%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+    position: relative;
+    left:-13%;
+}
+
+.categorytablein tr,th,td{
+    border: 0px #333;
+}
+
+.categorytable tr,th,td{
+    color:#f2f2f2;
+    border: 1px solid #f2f2f2;
+    
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}

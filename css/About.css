@@ -1,0 +1,63 @@
+/*About Section*/
+.About span{
+    color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 20px;
+	font-weight: 900;
+    z-index: 0;
+    font-style: oblique;
+    
+    
+}
+
+span span {
+    color: #F29E20 !important;
+    z-index: 0;
+    
+}
+
+.rowAbout div p{
+    text-align: justify;
+    text-rendering: geometricPrecision;
+}
+
+.rowAbout{
+    align-content: center;
+    background-color: #333;
+    width:900px;
+    position: relative;
+    left:220px;
+    opacity: .8;
+    z-index: 0;
+    
+    
+}
+
+.Content{
+     color:#fff;
+    z-index: 2;
+    
+    
+    
+}
+
+.Content div p{
+    font-size: 18px;
+}
+
+.Content H3{
+    color: #F29E20 !important;
+    font-weight: 1900;
+        font-style: oblique;
+
+    
+}
+
+.Body{
+    background-image: url(../IMAGES/AboutBody.jpg);
+    background-size: cover;
+    background-position: top;
+    z-index: 0;
+    
+}
+
